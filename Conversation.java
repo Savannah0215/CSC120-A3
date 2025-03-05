@@ -1,5 +1,6 @@
 
 class Conversation implements Chatbot {
+  int responses;
 
   // Attributes 
 
@@ -14,7 +15,9 @@ class Conversation implements Chatbot {
    * Starts and runs the conversation with the user
    */
   public void chat() {
-
+    Conversation.out.print("Please tell me how many rounds of conversation we'll have today.");
+    responses = in.nextInt();
+    Conversation.out.print("Hi! I'm your chatbot and I'll be assisting you today. What would you like to discuss?");
   }
 
   /**
